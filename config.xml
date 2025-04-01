@@ -5,7 +5,14 @@
     <author email="piercewetter3+fathers@gmail.com" href="https://jennica.github.io">
         Pierce T. Wetter III
     </author>
-    <content src="index.html" />
+    <content src="cordova.html" /> <!-- Local file as fallback -->
+    <allow-navigation href="http://localhost:*/*" />   
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <platform name="ios">
+     <preference name="deployment-target" value="13.0" />
+     <preference name="SwiftVersion" value="5.0" />
+     <preference name="scheme" value="app" />
+     <preference name="hostname" value="localhost" />
+    </platform>
 </widget>
